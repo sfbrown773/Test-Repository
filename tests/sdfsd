@@ -1,0 +1,24 @@
+
+/*test('add item 20 to basket', async ({ request }) => {
+    const quantity = {quantity:4}//how to make this dynamic? or into an x+1 type of thing
+    const addProduct = await request.put('https://mental-arline-testingtalk-42e6e59b.koyeb.app/api/BasketItems/20',{
+        data:quantity
+    })
+    const res = await addProduct.json();
+    const userId = res.authentication.bid
+    const authToken = res.authentication.token
+    await request.get(`https://mental-arline-testingtalk-42e6e59b.koyeb.app/rest/basket/${userId}`,{
+        headers:{
+            Accept:'application/json, text/plain, */*',
+            Authorization:  `Bearer ${authToken}`
+        }
+    }
+)
+});
+
+
+   "authentication": {
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdGF0dXMiOiJzdWNjZXNzIiwiZGF0YSI6eyJpZCI6MjMsInVzZXJuYW1lIjoiIiwiZW1haWwiOiJ0ZXN0aW5nLXRhbGtAZXhhbXBsZS5jb20iLCJwYXNzd29yZCI6IjM5MTM2OGYxMzQ2MzMzZjZiYTcyMTcyZWJmZGQ4M2ZhIiwicm9sZSI6ImN1c3RvbWVyIiwiZGVsdXhlVG9rZW4iOiIiLCJsYXN0TG9naW5JcCI6IjUxLjE5NS42Mi4xMTgiLCJwcm9maWxlSW1hZ2UiOiIvYXNzZXRzL3B1YmxpYy9pbWFnZXMvdXBsb2Fkcy9kZWZhdWx0LnN2ZyIsInRvdHBTZWNyZXQiOiIiLCJpc0FjdGl2ZSI6dHJ1ZSwiY3JlYXRlZEF0IjoiMjAyNC0xMS0wMiAwNjo1MDowMy43NzIgKzAwOjAwIiwidXBkYXRlZEF0IjoiMjAyNC0xMS0wMiAwODo0Mjo0My45NjMgKzAwOjAwIiwiZGVsZXRlZEF0IjpudWxsfSwiaWF0IjoxNzMwNTM3MDQ4fQ.J3Hf7vJ1rg-j6W2uRFHQSLYE255RKs9Jigt7c54xXbncvntth9qxckGgelXC1rjSZBSiSjb3QscA22LOPfdSuDNJXVnt0XEEUmNxTfS2FxoCg-S7OMzvJd-l5sPlA5KApqur0t958hOjtVKnxC6UkosGJBzM95x2rCVTw4BKf-8",
+        "bid": 7,
+        "umail": "testing-talk@example.com"
+        
