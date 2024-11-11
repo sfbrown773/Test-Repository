@@ -1,6 +1,3 @@
-//create github account, push some code (except .env using gitignore). Make some branches. Merge some branches
-//
-
 import { IPet, IPetReponse } from "./models/pet.model"
 import { expect } from "@playwright/test"
 import { RequestHolder } from "./request.holder"

@@ -1,4 +1,3 @@
-//add a bit of text
 export interface ILogin {
     email:string,
     password:string|undefined
